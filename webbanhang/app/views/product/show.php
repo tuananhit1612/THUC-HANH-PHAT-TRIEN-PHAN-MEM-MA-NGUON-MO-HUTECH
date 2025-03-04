@@ -1,0 +1,19 @@
+<?php include 'app/views/shares/header.php'; ?>
+
+<div class="container mt-4">
+    <div class="card">
+        <?php if ($product->image): ?>
+            <img src="/webbanhang/<?php echo $product->image; ?>" class="card-img-top img-fluid w-50" alt="Product Image">
+
+        <?php endif; ?>
+        <div class="card-body">
+            <h2 class="card-title"><?php echo htmlspecialchars($product->name, ENT_QUOTES, 'UTF-8'); ?></h2>
+            <p class="card-text"><?php echo htmlspecialchars($product->description, ENT_QUOTES, 'UTF-8'); ?></p>
+            <p class="fw-bold text-primary">Giá: <?php echo htmlspecialchars($product->price, ENT_QUOTES, 'UTF-8'); ?> VND</p>
+            <p class="text-muted">Danh mục: <strong><?php echo htmlspecialchars($product->category_name, ENT_QUOTES, 'UTF-8'); ?></strong></p>
+            <a href="/webbanhang/Product/index" class="btn btn-secondary">Quay lại</a>
+        </div>
+    </div>
+</div>
+
+<?php include 'app/views/shares/footer.php'; ?>
