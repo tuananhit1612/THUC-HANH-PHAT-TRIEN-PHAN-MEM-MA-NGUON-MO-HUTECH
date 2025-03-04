@@ -1,10 +1,9 @@
 <?php include 'app/views/shares/header.php'; ?>
 
-<div class="container mt-4">
-    <div class="card">
+<div class="container mt-4 d-flex justify-content-center">
+    <div class="card text-center" style="max-width: 600px; width: 100%;">
         <?php if ($product->image): ?>
-            <img src="/webbanhang/<?php echo $product->image; ?>" class="card-img-top img-fluid w-50" alt="Product Image">
-
+            <img src="/webbanhang/<?php echo $product->image; ?>" class="card-img-top img-fluid mx-auto d-block w-50" alt="Product Image">
         <?php endif; ?>
         <div class="card-body">
             <h2 class="card-title"><?php echo htmlspecialchars($product->name, ENT_QUOTES, 'UTF-8'); ?></h2>

@@ -52,7 +52,7 @@
                 
                 <?php if ($product->image): ?>
                     <div class="mt-2">
-                        <img src="/<?php echo $product->image; ?>" alt="Product Image" class="img-thumbnail" style="max-width: 150px;">
+                    <img src="/webbanhang/<?php echo $product->image; ?>" class="card-img-top img-fluid mx-auto d-block w-50" alt="Product Image">
                     </div>
                 <?php endif; ?>
             </div>
