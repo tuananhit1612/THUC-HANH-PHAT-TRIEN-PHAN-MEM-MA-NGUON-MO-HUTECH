@@ -1,0 +1,78 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.os-stats {
+    margin-top: 30px;
+}
+
+.bar {
+    background: #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    height: 20px;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 5px;
+    color: white;
+    padding-left: 10px;
+    line-height: 20px;
+    position: absolute;
+}
+
+.bar-label {
+    position: absolute;
+    left: 10px;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+    padding: 10px 20px;
+}
+
+body {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    /* dành khoảng cho footer */
+    background-color: #f9f9f9;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
